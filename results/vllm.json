@@ -1,0 +1,1353 @@
+{
+  "engine": "vllm",
+  "url": "http://127.0.0.1:18000/v1",
+  "model_alias": "support-triage",
+  "started_at_utc": "2026-11-11T02:37:05.948629+00:00",
+  "dataset_sha256": "f4d37db3e7ea212ecba28871b97c59f7c3379bbb39708a1c536da5d42118a4e4",
+  "shuffle_seed": 5090,
+  "rounds_per_level": 2,
+  "max_output_tokens": 96,
+  "runs": [
+    {
+      "concurrency": 1,
+      "requests": 48,
+      "successful": 48,
+      "errors": 0,
+      "correct": 44,
+      "accuracy_pct": 91.67,
+      "wall_seconds": 11.128,
+      "successful_requests_per_second": 4.31,
+      "output_tokens_per_second": 141.8,
+      "p95_ttft_ms": 43.44,
+      "p95_latency_ms": 272.38,
+      "outcomes": [
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery via a reset link, which falls under account access management.",
+          "ttft_ms": 26.14828800142277,
+          "latency_ms": 215.57749999919906,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost authenticator credentials and account recovery, which falls under account access.",
+          "ttft_ms": 26.859703997615725,
+          "latency_ms": 215.05249600159004,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves correcting invoice details for payment processing, which falls under billing.",
+          "ttft_ms": 27.562739996938035,
+          "latency_ms": 196.92646600014996,
+          "completion_tokens": 28
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment, which falls under billing.",
+          "ttft_ms": 28.612310998141766,
+          "latency_ms": 198.26617099170107,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a legal request related to privacy and data access, which falls under human_review.",
+          "ttft_ms": 25.417265002033673,
+          "latency_ms": 221.24282299773768,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This is a privacy and data deletion request requiring formal handling under data protection regulations.",
+          "ttft_ms": 27.97916800773237,
+          "latency_ms": 207.93320900702383,
+          "completion_tokens": 30
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves product performance and a broken feature (dashboard freezing), which falls under technical support.",
+          "ttft_ms": 35.81561900500674,
+          "latency_ms": 231.37702301028185,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket concerns a discrepancy in invoicing after a seat reduction, which falls under billing-related charges and proration.",
+          "ttft_ms": 31.870266000623815,
+          "latency_ms": 251.04931299574673,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a change in billing frequency and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 41.65212300722487,
+          "latency_ms": 250.3224040119676,
+          "completion_tokens": 34
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and receiving a verification code, which falls under account access.",
+          "ttft_ms": 27.72196700971108,
+          "latency_ms": 216.14142300677486,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API performance and intermittent 503 errors, which points to a technical product or service issue.",
+          "ttft_ms": 43.43876100028865,
+          "latency_ms": 262.5208509998629,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a recurring notification bug in the Slack integration, which is a product feature malfunction.",
+          "ttft_ms": 37.436815997352824,
+          "latency_ms": 232.89316799491644,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over technical or billing issues.",
+          "ttft_ms": 44.52156099432614,
+          "latency_ms": 246.2629559886409,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery for a former workspace owner, which falls under account access management.",
+          "ttft_ms": 27.187589992536232,
+          "latency_ms": 223.2626879995223,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "account_access",
+          "reason": "The customer is experiencing account issues and lacks specific details, suggesting a potential login or access problem.",
+          "ttft_ms": 33.14851099275984,
+          "latency_ms": 232.7453530015191,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "billing",
+          "reason": "The issue involves a refund review and payment-related functionality, even though it stems from a technical error in the export feature.",
+          "ttft_ms": 24.08308399026282,
+          "latency_ms": 250.56355400010943,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over other issues.",
+          "ttft_ms": 30.901421007001773,
+          "latency_ms": 221.34448900760617,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and account access due to failed login attempts, which falls under account access.",
+          "ttft_ms": 31.016387001727708,
+          "latency_ms": 238.49836700537708,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The inquiry relates to updating a corporate card before an annual renewal, which is a billing-related action.",
+          "ttft_ms": 24.541154998587444,
+          "latency_ms": 223.9410339971073,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing responsibilities.",
+          "ttft_ms": 26.51861599588301,
+          "latency_ms": 202.061945994501,
+          "completion_tokens": 29
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a CSV export functionality failing to include data rows, indicating a technical bug in the export feature despite correct browser display.",
+          "ttft_ms": 34.10308599995915,
+          "latency_ms": 272.3751900048228,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery related to two-factor authentication and login credentials.",
+          "ttft_ms": 27.90956800163258,
+          "latency_ms": 207.03534899803344,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security or privacy incident with shared customer data, which requires immediate human review.",
+          "ttft_ms": 32.04016899690032,
+          "latency_ms": 234.42497300857212,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves app crashes related to attaching a JPEG, which points to a product feature or performance bug, not billing, account access, security, or human review.",
+          "ttft_ms": 30.58774299279321,
+          "latency_ms": 313.6519289982971,
+          "completion_tokens": 46
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over technical or billing issues.",
+          "ttft_ms": 29.247084996313788,
+          "latency_ms": 229.3667780031683,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves correcting invoice details for payment processing, which falls under billing.",
+          "ttft_ms": 32.286161003867164,
+          "latency_ms": 204.63181799277663,
+          "completion_tokens": 28
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and receiving a verification code, which falls under account access.",
+          "ttft_ms": 35.48161200887989,
+          "latency_ms": 224.63662500376813,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery for a former workspace owner, which falls under account access management.",
+          "ttft_ms": 30.49239600659348,
+          "latency_ms": 223.5827580007026,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves product performance and a broken feature (dashboard freezing), which falls under technical support.",
+          "ttft_ms": 26.751761994091794,
+          "latency_ms": 219.1335679963231,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing responsibilities.",
+          "ttft_ms": 36.639287005527876,
+          "latency_ms": 211.9846290006535,
+          "completion_tokens": 29
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over other issues.",
+          "ttft_ms": 45.78146699350327,
+          "latency_ms": 233.9831800054526,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment, which falls under billing.",
+          "ttft_ms": 38.47658999438863,
+          "latency_ms": 206.35438400495332,
+          "completion_tokens": 28
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery related to two-factor authentication and login credentials.",
+          "ttft_ms": 31.20151101029478,
+          "latency_ms": 200.9301000070991,
+          "completion_tokens": 28
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a recurring notification bug in the Slack integration, which is a product feature malfunction.",
+          "ttft_ms": 24.77320200705435,
+          "latency_ms": 222.70572300476488,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and account access due to failed login attempts, which falls under account access.",
+          "ttft_ms": 30.387880993657745,
+          "latency_ms": 240.9985609992873,
+          "completion_tokens": 34
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves app crashes related to attaching a JPEG, which points to a product feature or performance bug, not billing, account access, security, or human review.",
+          "ttft_ms": 31.210986999212764,
+          "latency_ms": 313.54025199834723,
+          "completion_tokens": 46
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a CSV export functionality failing to include data rows, indicating a technical bug in the export feature despite correct browser display.",
+          "ttft_ms": 25.324343994725496,
+          "latency_ms": 263.06969599681906,
+          "completion_tokens": 39
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a legal request related to privacy and data access, which falls under human_review.",
+          "ttft_ms": 37.43000200483948,
+          "latency_ms": 231.40173799765762,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery via a reset link, which falls under account access management.",
+          "ttft_ms": 22.750104006263427,
+          "latency_ms": 210.9980670065852,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket concerns a discrepancy in invoicing after a seat reduction, which falls under billing-related charges and proration.",
+          "ttft_ms": 27.105036002467386,
+          "latency_ms": 247.58826500328723,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "billing",
+          "reason": "The issue involves a refund review and payment-related functionality, even though it stems from a technical error in the export feature.",
+          "ttft_ms": 32.589668000582606,
+          "latency_ms": 257.89215401164256,
+          "completion_tokens": 37
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The inquiry relates to updating a corporate card before an annual renewal, which is a billing-related action.",
+          "ttft_ms": 29.701445004320703,
+          "latency_ms": 227.64141899824608,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This is a privacy and data deletion request requiring formal handling under data protection regulations.",
+          "ttft_ms": 29.633533995365724,
+          "latency_ms": 211.68571599991992,
+          "completion_tokens": 30
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "account_access",
+          "reason": "The customer is experiencing account issues and lacks specific details, suggesting a potential login or access problem.",
+          "ttft_ms": 27.154947005328722,
+          "latency_ms": 227.94605400122236,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security or privacy incident with shared customer data, which requires immediate human review.",
+          "ttft_ms": 30.802921988652088,
+          "latency_ms": 231.70895798830315,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost authenticator credentials and account recovery, which falls under account access.",
+          "ttft_ms": 32.92785999656189,
+          "latency_ms": 220.36539399414323,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API performance and intermittent 503 errors, which points to a technical product or service issue.",
+          "ttft_ms": 31.68146799725946,
+          "latency_ms": 251.13434199010953,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a change in billing frequency and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 34.43951600638684,
+          "latency_ms": 240.94034200243186,
+          "completion_tokens": 34
+        }
+      ]
+    },
+    {
+      "concurrency": 4,
+      "requests": 48,
+      "successful": 48,
+      "errors": 0,
+      "correct": 44,
+      "accuracy_pct": 91.67,
+      "wall_seconds": 3.407,
+      "successful_requests_per_second": 14.09,
+      "output_tokens_per_second": 464.87,
+      "p95_ttft_ms": 53.51,
+      "p95_latency_ms": 323.23,
+      "outcomes": [
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery via a reset link, which falls under account access management.",
+          "ttft_ms": 51.5209619916277,
+          "latency_ms": 268.7949479877716,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost authenticator credentials and account recovery, which falls under account access.",
+          "ttft_ms": 53.96331599331461,
+          "latency_ms": 271.10169699881226,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves correcting invoice details for payment processing, which falls under billing.",
+          "ttft_ms": 53.800463007064536,
+          "latency_ms": 237.82665400358383,
+          "completion_tokens": 28
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment, which falls under billing.",
+          "ttft_ms": 53.50648600142449,
+          "latency_ms": 237.13229900749866,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a legal request related to privacy and data access, which falls under human_review.",
+          "ttft_ms": 33.640787994954735,
+          "latency_ms": 268.21942400420085,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This is a privacy and data deletion request requiring formal handling and confirmation.",
+          "ttft_ms": 33.4096090082312,
+          "latency_ms": 227.6120339956833,
+          "completion_tokens": 28
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves product performance and a broken feature (dashboard freezing), which falls under technical support.",
+          "ttft_ms": 33.072514008381404,
+          "latency_ms": 275.17948200693354,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket concerns a discrepancy in invoicing after a seat reduction, which falls under billing-related charges and proration.",
+          "ttft_ms": 30.375681002624333,
+          "latency_ms": 323.23037400783505,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a change in billing frequency and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 31.695282988948748,
+          "latency_ms": 307.1035339962691,
+          "completion_tokens": 34
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and receiving a verification code, which falls under account access.",
+          "ttft_ms": 37.17669998877682,
+          "latency_ms": 272.803911997471,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API performance and intermittent 503 errors, which points to a technical product or service issue.",
+          "ttft_ms": 42.82142499869224,
+          "latency_ms": 310.10398699436337,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a recurring notification bug in the Slack integration, which is a product feature malfunction.",
+          "ttft_ms": 27.519412004039623,
+          "latency_ms": 259.9903789960081,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over technical or billing issues.",
+          "ttft_ms": 43.63335900416132,
+          "latency_ms": 264.4779690017458,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery for a former workspace owner, which falls under account access management.",
+          "ttft_ms": 40.371098002651706,
+          "latency_ms": 259.2256380012259,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "account_access",
+          "reason": "The customer is experiencing account issues and lacks specific details, suggesting a potential login or access problem.",
+          "ttft_ms": 28.352955996524543,
+          "latency_ms": 255.35209599183872,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "billing",
+          "reason": "The issue involves a refund review and payment-related functionality, even though it stems from a technical error in the export feature.",
+          "ttft_ms": 27.831890009110793,
+          "latency_ms": 290.53855800884776,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over other issues.",
+          "ttft_ms": 29.466781998053193,
+          "latency_ms": 250.5513130017789,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and account access due to failed login attempts, which falls under account access.",
+          "ttft_ms": 28.976086992770433,
+          "latency_ms": 276.65558199805673,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The inquiry relates to updating a corporate card before an annual renewal, which is a billing-related action.",
+          "ttft_ms": 28.1892390048597,
+          "latency_ms": 266.35557900590356,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing responsibilities.",
+          "ttft_ms": 28.64396599761676,
+          "latency_ms": 231.2392669991823,
+          "completion_tokens": 29
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a CSV export functionality failing to include data rows, indicating a technical bug in the export feature despite correct browser display.",
+          "ttft_ms": 26.891600005910732,
+          "latency_ms": 311.71675301447976,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery related to two-factor authentication and login credentials.",
+          "ttft_ms": 26.302045996999368,
+          "latency_ms": 217.69694099202752,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security or privacy incident with shared customer data, which requires immediate human review.",
+          "ttft_ms": 27.137398996273987,
+          "latency_ms": 268.2983379927464,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves app crashes related to attaching a JPEG, which points to a product feature or performance bug, not billing, account access, security, or human review.",
+          "ttft_ms": 26.6456920071505,
+          "latency_ms": 364.0543270012131,
+          "completion_tokens": 46
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over technical or billing issues.",
+          "ttft_ms": 31.44037100719288,
+          "latency_ms": 278.88947700557765,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves correcting invoice details for payment processing, which falls under billing.",
+          "ttft_ms": 29.156987002352253,
+          "latency_ms": 239.72315600258298,
+          "completion_tokens": 28
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and receiving a verification code, which falls under account access.",
+          "ttft_ms": 26.764144000480883,
+          "latency_ms": 258.404802007135,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery for a former workspace owner, which falls under account access management.",
+          "ttft_ms": 30.835393990855664,
+          "latency_ms": 273.3413639944047,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves product performance and a broken feature (dashboard freezing), which falls under technical support.",
+          "ttft_ms": 28.44398700108286,
+          "latency_ms": 271.9849360000808,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing responsibilities.",
+          "ttft_ms": 28.29133000341244,
+          "latency_ms": 244.3180120026227,
+          "completion_tokens": 29
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over other issues.",
+          "ttft_ms": 35.342308998224325,
+          "latency_ms": 257.7296329982346,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The issue involves a charge made before the trial ended, which falls under billing and payment disputes.",
+          "ttft_ms": 27.58923800138291,
+          "latency_ms": 256.82179900468327,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery related to two-factor authentication and login credentials, which falls under account access.",
+          "ttft_ms": 27.40735800762195,
+          "latency_ms": 275.7614709989866,
+          "completion_tokens": 34
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a recurring notification bug in the Slack integration, which is a product feature malfunction.",
+          "ttft_ms": 26.94451699790079,
+          "latency_ms": 252.3450289882021,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and account access due to failed login attempts, which falls under account access.",
+          "ttft_ms": 27.501828997628763,
+          "latency_ms": 273.54536698840093,
+          "completion_tokens": 34
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves app crashes related to attaching a JPEG, which points to a product feature or performance bug, not billing, account access, security, or human review.",
+          "ttft_ms": 24.234444004832767,
+          "latency_ms": 367.0919319993118,
+          "completion_tokens": 46
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a CSV export functionality failing to include data rows, indicating a technical bug in the export feature despite correct browser display.",
+          "ttft_ms": 25.13831600663252,
+          "latency_ms": 310.9665290103294,
+          "completion_tokens": 39
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a legal request related to privacy and data access, which falls under human_review.",
+          "ttft_ms": 34.230481993290596,
+          "latency_ms": 253.4998019982595,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery via a reset link, which falls under account access management.",
+          "ttft_ms": 28.304259991273284,
+          "latency_ms": 258.99948299047537,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket concerns a discrepancy in invoicing after a seat reduction, which falls under billing-related charges and proration.",
+          "ttft_ms": 27.207577993976884,
+          "latency_ms": 295.5296939908294,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "billing",
+          "reason": "The issue involves a refund review and payment-related functionality, even though it stems from a technical error in the export feature.",
+          "ttft_ms": 44.416553995688446,
+          "latency_ms": 320.803288006573,
+          "completion_tokens": 37
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The inquiry relates to updating a corporate card before an annual renewal, which is a billing-related action.",
+          "ttft_ms": 36.01256100228056,
+          "latency_ms": 268.4223399992334,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This is a privacy and data deletion request requiring formal handling and confirmation.",
+          "ttft_ms": 31.6378700081259,
+          "latency_ms": 216.02431799692567,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "account_access",
+          "reason": "The customer is experiencing account issues and lacks specific details, suggesting a potential login or access problem.",
+          "ttft_ms": 48.531022999668494,
+          "latency_ms": 266.52485599333886,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security or privacy incident with shared customer data, which requires immediate human review.",
+          "ttft_ms": 48.03820599045139,
+          "latency_ms": 266.24816399998963,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost authenticator credentials and account recovery, which falls under account access.",
+          "ttft_ms": 42.96154199982993,
+          "latency_ms": 251.61298000602983,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API performance and intermittent 503 errors, which points to a technical product or service issue.",
+          "ttft_ms": 26.621198005159386,
+          "latency_ms": 270.6928690022323,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a change in billing frequency and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 27.5906210008543,
+          "latency_ms": 238.0514249962289,
+          "completion_tokens": 34
+        }
+      ]
+    },
+    {
+      "concurrency": 8,
+      "requests": 48,
+      "successful": 48,
+      "errors": 0,
+      "correct": 44,
+      "accuracy_pct": 91.67,
+      "wall_seconds": 2.145,
+      "successful_requests_per_second": 22.37,
+      "output_tokens_per_second": 736.46,
+      "p95_ttft_ms": 74.99,
+      "p95_latency_ms": 414.35,
+      "outcomes": [
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery via a reset link, which falls under account access management.",
+          "ttft_ms": 66.67683699924964,
+          "latency_ms": 309.9855820037192,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost authenticator credentials and account recovery, which falls under account access.",
+          "ttft_ms": 66.58102299843449,
+          "latency_ms": 310.43063700781204,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves correcting invoice details for payment processing, which falls under billing.",
+          "ttft_ms": 66.15842400060501,
+          "latency_ms": 266.97771399631165,
+          "completion_tokens": 28
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The issue involves a charge made before the trial ended, which falls under billing and payment disputes.",
+          "ttft_ms": 65.74665599328,
+          "latency_ms": 311.8610079982318,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a legal request related to privacy and data access, which falls under human_review.",
+          "ttft_ms": 69.33153301361017,
+          "latency_ms": 318.7413060077233,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This is a privacy and data deletion request requiring formal handling and confirmation.",
+          "ttft_ms": 69.1412849992048,
+          "latency_ms": 272.97329499560874,
+          "completion_tokens": 28
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves product performance and a broken feature (dashboard freezing), which falls under technical support.",
+          "ttft_ms": 69.0358540014131,
+          "latency_ms": 318.6864479939686,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket concerns a discrepancy in invoicing after a seat reduction, which falls under billing-related charges and proration.",
+          "ttft_ms": 68.80007300060242,
+          "latency_ms": 369.761326990556,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a change in billing frequency and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 43.38252700108569,
+          "latency_ms": 325.6697950128,
+          "completion_tokens": 34
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and receiving a verification code, which falls under account access.",
+          "ttft_ms": 38.713688001735136,
+          "latency_ms": 290.7394850044511,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API performance and intermittent 503 errors, which points to a technical product or service issue.",
+          "ttft_ms": 49.977823000517674,
+          "latency_ms": 402.3460970056476,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a recurring notification bug in the Slack integration, which is a product feature malfunction.",
+          "ttft_ms": 49.18780300067738,
+          "latency_ms": 293.7396369961789,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over technical or billing issues.",
+          "ttft_ms": 47.16388801170979,
+          "latency_ms": 311.3515600125538,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery for a former workspace owner, which falls under account access management.",
+          "ttft_ms": 42.12713000015356,
+          "latency_ms": 304.70868600241374,
+          "completion_tokens": 32
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "account_access",
+          "reason": "The customer is experiencing account issues and lacks specific details, suggesting a potential login or access problem.",
+          "ttft_ms": 41.84687299130019,
+          "latency_ms": 327.02240999788046,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "billing",
+          "reason": "The issue involves a refund review and payment-related functionality, even though it stems from a technical error in the export feature.",
+          "ttft_ms": 25.762010001926683,
+          "latency_ms": 384.3780110037187,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over other issues.",
+          "ttft_ms": 31.248690997017547,
+          "latency_ms": 352.21086999808904,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and account access due to failed login attempts, which falls under account access.",
+          "ttft_ms": 54.260857999906875,
+          "latency_ms": 392.9989640018903,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The inquiry relates to updating a corporate card before an annual renewal, which is a billing-related action.",
+          "ttft_ms": 74.98941400262993,
+          "latency_ms": 382.5138190004509,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing responsibilities.",
+          "ttft_ms": 88.777395998477,
+          "latency_ms": 331.28586898965295,
+          "completion_tokens": 29
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a CSV export functionality failing to include data rows, indicating a technical bug in the export feature despite correct browser display.",
+          "ttft_ms": 88.28224299941212,
+          "latency_ms": 439.1309070051648,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery related to two-factor authentication and login credentials.",
+          "ttft_ms": 67.2122730029514,
+          "latency_ms": 308.46484399808105,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security or privacy incident with shared customer data, which requires immediate human review.",
+          "ttft_ms": 27.474718997837044,
+          "latency_ms": 325.03999600885436,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves app crashes when attaching a JPEG, which is a product functionality problem, not a billing, account access, security, or human review concern.",
+          "ttft_ms": 37.051662991871126,
+          "latency_ms": 414.35037899645977,
+          "completion_tokens": 44
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over technical or billing issues.",
+          "ttft_ms": 38.561763998586684,
+          "latency_ms": 340.253696005675,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves correcting invoice details for payment processing, which falls under billing.",
+          "ttft_ms": 30.968841005233116,
+          "latency_ms": 273.90981900680345,
+          "completion_tokens": 28
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and receiving a verification code, which falls under account access.",
+          "ttft_ms": 31.321936010499485,
+          "latency_ms": 304.4579780107597,
+          "completion_tokens": 31
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery for a former workspace owner, which falls under account access management.",
+          "ttft_ms": 34.24875499331392,
+          "latency_ms": 319.8221799975727,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves product performance and a broken feature (dashboard freezing), which falls under technical support.",
+          "ttft_ms": 33.6016910005128,
+          "latency_ms": 318.50018799013924,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing responsibilities.",
+          "ttft_ms": 29.267389996675774,
+          "latency_ms": 294.1024949977873,
+          "completion_tokens": 29
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security incident and unauthorized access, which takes precedence over other issues.",
+          "ttft_ms": 31.8006760062417,
+          "latency_ms": 323.8913700042758,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The issue involves a charge made before the trial ended, which falls under billing and payment disputes.",
+          "ttft_ms": 32.76346799975727,
+          "latency_ms": 334.8913840018213,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery related to two-factor authentication and login credentials.",
+          "ttft_ms": 31.48963900457602,
+          "latency_ms": 310.28162300935946,
+          "completion_tokens": 28
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a recurring notification bug in the Slack integration, which is a product feature malfunction.",
+          "ttft_ms": 39.55065899936017,
+          "latency_ms": 337.75363900349475,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves login credentials and account access due to failed login attempts, which falls under account access.",
+          "ttft_ms": 36.853546000202186,
+          "latency_ms": 366.04084201098885,
+          "completion_tokens": 34
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves app crashes related to attaching a JPEG, which points to a product feature or performance bug, not billing, account access, security, or human review.",
+          "ttft_ms": 30.766997995669954,
+          "latency_ms": 476.9035409990465,
+          "completion_tokens": 46
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a CSV export functionality failing to include data rows, indicating a technical bug in the export feature despite correct browser display.",
+          "ttft_ms": 30.16345200012438,
+          "latency_ms": 403.5551840061089,
+          "completion_tokens": 39
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a legal request related to privacy and data access, which falls under human_review.",
+          "ttft_ms": 47.796176993870176,
+          "latency_ms": 341.6447149938904,
+          "completion_tokens": 32
+        },
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves account recovery via a reset link, which falls under account access management.",
+          "ttft_ms": 32.43339899927378,
+          "latency_ms": 313.23501400765963,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket concerns a discrepancy in invoicing after a seat reduction, which falls under billing-related charges and proration.",
+          "ttft_ms": 36.619774997234344,
+          "latency_ms": 379.6949319948908,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "billing",
+          "reason": "The issue involves a refund review and payment-related functionality, even though it stems from a technical error in the export feature.",
+          "ttft_ms": 31.598526999005117,
+          "latency_ms": 385.09509499999695,
+          "completion_tokens": 37
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The inquiry relates to updating a corporate card before an annual renewal, which is a billing-related action.",
+          "ttft_ms": 37.2256070113508,
+          "latency_ms": 344.07849500712473,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This is a privacy and data deletion request requiring formal handling and confirmation.",
+          "ttft_ms": 37.51916499459185,
+          "latency_ms": 298.88454600586556,
+          "completion_tokens": 28
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "account_access",
+          "reason": "The customer is experiencing account issues and lacks specific details, suggesting a potential login or access problem.",
+          "ttft_ms": 27.92799200688023,
+          "latency_ms": 318.30970900773536,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "This involves a potential security or privacy incident with shared customer data, which requires immediate human review.",
+          "ttft_ms": 47.891830996377394,
+          "latency_ms": 313.0677330045728,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost authenticator credentials and account recovery, which falls under account access.",
+          "ttft_ms": 41.76588398695458,
+          "latency_ms": 297.3491979937535,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API performance and intermittent 503 errors, which points to a technical product or service issue.",
+          "ttft_ms": 40.63784699246753,
+          "latency_ms": 305.2229239983717,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a change in billing frequency and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 30.291700997622684,
+          "latency_ms": 259.14691599609796,
+          "completion_tokens": 34
+        }
+      ]
+    }
+  ]
+}
