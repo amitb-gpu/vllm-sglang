@@ -1,0 +1,1662 @@
+{
+  "started_at_utc": "2026-11-16T21:28:04.955497+00:00",
+  "server": {
+    "engine": "vllm",
+    "prefix_cache": "off",
+    "kv_offload": "none",
+    "max_model_len": 4096,
+    "gpu_memory_fraction": 0.6,
+    "flags": [
+      "vllm",
+      "serve",
+      "Qwen/Qwen3-4B-Instruct-2507",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18000",
+      "--revision",
+      "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "--dtype",
+      "bfloat16",
+      "--served-model-name",
+      "support-triage",
+      "--max-model-len",
+      "4096",
+      "--max-num-seqs",
+      "16",
+      "--gpu-memory-utilization",
+      "0.60",
+      "--disable-prefix-caching",
+      "--attention-backend",
+      "FLASH_ATTN",
+      "--generation-config",
+      "vllm"
+    ],
+    "versions": {
+      "vllm": "0.33.0",
+      "torch": "2.14.0+cu132",
+      "transformers": "5.20.2",
+      "triton": "3.8.0"
+    },
+    "python": "3.12.16",
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "VLLM_USE_FLASHINFER_SAMPLER": "0",
+      "HF_HUB_OFFLINE": "1"
+    },
+    "lmcache_config": null,
+    "gpu_before_launch": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "6226",
+      "utilization.gpu": "1",
+      "temperature.gpu": "41.10"
+    },
+    "gpu_after_start": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "26292",
+      "utilization.gpu": "0",
+      "temperature.gpu": "34.40"
+    },
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "distro": "Ubuntu-26.04"
+  },
+  "workload": "policy",
+  "url": "http://127.0.0.1:18000/v1",
+  "client_python": "3.12.16",
+  "dataset_sha256": "f4d37db3e7ea212ecba28871b97c59f7c3379bbb39708a1c536da5d42118a4e4",
+  "shuffle_seed": 5090,
+  "rounds_per_level": 2,
+  "max_output_tokens": 96,
+  "document_tokens": 2000,
+  "document_sha256": "f1027e218f76652492151898cd46c4dec9b5b10ef3b14ec33f4b01df93bd099c",
+  "runs": [
+    {
+      "concurrency": 1,
+      "requests": 48,
+      "successful": 48,
+      "errors": 0,
+      "correct": 48,
+      "accuracy_pct": 100.0,
+      "wall_seconds": 15.394,
+      "successful_requests_per_second": 3.12,
+      "output_tokens_per_second": 110.95,
+      "p95_ttft_ms": 106.35,
+      "p95_latency_ms": 354.17,
+      "outcomes": [
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost or expired password reset link, which falls under account access responsibilities for login and verification mail.",
+          "ttft_ms": 104.21818299801089,
+          "latency_ms": 329.2640260187909,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factor access and authentication recovery, which falls under account access responsibilities.",
+          "ttft_ms": 103.26093301409855,
+          "latency_ms": 298.17093900055625,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves invoice details and correction of legal entity and tax ID, which falls under billing ownership.",
+          "ttft_ms": 103.77820397843607,
+          "latency_ms": 303.6223059752956,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment timing, which falls under billing responsibilities for charge disputes and payment failures.",
+          "ttft_ms": 104.61187700275332,
+          "latency_ms": 323.6216139921453,
+          "completion_tokens": 36
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a privacy request and legal subpoena, which falls under human review as specified in the policy.",
+          "ttft_ms": 103.09687801054679,
+          "latency_ms": 317.4926270148717,
+          "completion_tokens": 35
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The request involves a privacy request for data deletion, which falls under human review as it requires legal and privacy compliance assessment.",
+          "ttft_ms": 103.25320297852159,
+          "latency_ms": 335.3061709785834,
+          "completion_tokens": 38
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a performance problem with the dashboard when selecting a long date range, which is a product feature error.",
+          "ttft_ms": 104.63795799296349,
+          "latency_ms": 323.8078079884872,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a proration credit related to a seat reduction, which falls under billing responsibilities.",
+          "ttft_ms": 104.79999400558881,
+          "latency_ms": 300.7643159944564,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a plan change from monthly to annual billing and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 105.09913699934259,
+          "latency_ms": 330.37188698654063,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and inability to receive a verification code, which falls under account access responsibilities.",
+          "ttft_ms": 102.47124300803989,
+          "latency_ms": 321.19676799629815,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API failures and intermittent HTTP 503 errors, which are technical performance problems related to service availability and request handling.",
+          "ttft_ms": 103.63870198489167,
+          "latency_ms": 349.34156798408367,
+          "completion_tokens": 40
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a repeated notification from the Slack integration, which is a product feature behavior and falls under technical support responsibilities.",
+          "ttft_ms": 103.46941597526893,
+          "latency_ms": 328.598804975627,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a suspected compromise of a contractor's API key, which falls under security concerns and requires human review for assessment.",
+          "ttft_ms": 107.3595070047304,
+          "latency_ms": 343.1268179847393,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The request involves account recovery, which falls under account access ownership.",
+          "ttft_ms": 103.09730999870226,
+          "latency_ms": 265.0828900223132,
+          "completion_tokens": 27
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes vague symptoms and lacks specific details, indicating an unclear intent that requires human review.",
+          "ttft_ms": 106.35394498240203,
+          "latency_ms": 305.53080400568433,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is a failed export due to an internal server error, which falls under technical support responsibilities.",
+          "ttft_ms": 103.75378502067178,
+          "latency_ms": 309.5023810165003,
+          "completion_tokens": 34
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes a suspected compromise involving unauthorized sign-ins and a new admin, which falls under security concerns and requires human review.",
+          "ttft_ms": 103.01886199158616,
+          "latency_ms": 340.7006729976274,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue is a locked account due to multiple failed login attempts, which falls under account access responsibilities.",
+          "ttft_ms": 105.28604700812139,
+          "latency_ms": 311.4589719916694,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The customer is inquiring about updating a corporate card prior to an annual renewal, which falls under billing responsibilities for payment and plan-related updates.",
+          "ttft_ms": 105.04650499206036,
+          "latency_ms": 354.17269699973986,
+          "completion_tokens": 41
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing ownership.",
+          "ttft_ms": 102.58480600896291,
+          "latency_ms": 277.33323999564163,
+          "completion_tokens": 29
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a failed export with missing data, which is a technical functionality problem despite the browser showing correct record count.",
+          "ttft_ms": 102.61274300864898,
+          "latency_ms": 329.8189000051934,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factors and account recovery, which falls under account access ownership.",
+          "ttft_ms": 104.87569999531843,
+          "latency_ms": 291.54912900412455,
+          "completion_tokens": 31
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a potential privacy breach with shared customer data, which falls under human review due to security and privacy concerns.",
+          "ttft_ms": 103.63528301240876,
+          "latency_ms": 334.0945060190279,
+          "completion_tokens": 38
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is the app crashing when attaching a JPEG, which is a product functionality failure, not a billing, account access, or security concern.",
+          "ttft_ms": 103.56351899099536,
+          "latency_ms": 367.1582009992562,
+          "completion_tokens": 43
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a suspected compromise of a contractor's API key, which falls under security concerns and requires human review for assessment.",
+          "ttft_ms": 103.15681897918694,
+          "latency_ms": 340.76353698037565,
+          "completion_tokens": 39
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves invoice details and correction of legal entity and tax ID, which falls under billing ownership.",
+          "ttft_ms": 103.00159998587333,
+          "latency_ms": 302.8846860106569,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and inability to receive a verification code, which falls under account access responsibilities.",
+          "ttft_ms": 104.93092497927137,
+          "latency_ms": 325.1115339808166,
+          "completion_tokens": 36
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The request involves account recovery, which falls under account access ownership.",
+          "ttft_ms": 102.07396998885088,
+          "latency_ms": 265.09499599342234,
+          "completion_tokens": 27
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a performance problem with the dashboard when selecting a long date range, which is a product feature error.",
+          "ttft_ms": 104.52376600005664,
+          "latency_ms": 323.0018029862549,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing ownership.",
+          "ttft_ms": 103.89775701332837,
+          "latency_ms": 280.3200719936285,
+          "completion_tokens": 29
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes a suspected compromise involving unauthorized sign-ins and a new admin, which falls under security concerns and requires human review.",
+          "ttft_ms": 104.14469701936468,
+          "latency_ms": 341.54918702552095,
+          "completion_tokens": 39
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment timing, which falls under billing responsibilities for charge disputes and payment failures.",
+          "ttft_ms": 106.75036700558849,
+          "latency_ms": 324.0332290006336,
+          "completion_tokens": 36
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factors and account recovery, which falls under account access ownership.",
+          "ttft_ms": 103.01239902037196,
+          "latency_ms": 290.19469901686534,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a repeated notification from the Slack integration, which is a product feature behavior and falls under technical support responsibilities.",
+          "ttft_ms": 104.91091100266203,
+          "latency_ms": 329.5408010017127,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue is a locked account due to multiple failed login attempts, which falls under account access responsibilities.",
+          "ttft_ms": 102.79391100630164,
+          "latency_ms": 309.2900990159251,
+          "completion_tokens": 34
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is the app crashing when attaching a JPEG, which is a product functionality failure, not a billing, account access, or security concern.",
+          "ttft_ms": 104.48595101479441,
+          "latency_ms": 367.31718000373803,
+          "completion_tokens": 43
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a failed export with missing data, which is a technical functionality problem despite the browser showing correct record count.",
+          "ttft_ms": 105.73847900377586,
+          "latency_ms": 330.94333598273806,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a privacy request and legal subpoena, which falls under human review as specified in the policy.",
+          "ttft_ms": 102.97190901474096,
+          "latency_ms": 315.30630600173026,
+          "completion_tokens": 35
+        },
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost or expired password reset link, which falls under account access responsibilities for login and verification mail.",
+          "ttft_ms": 103.751471004216,
+          "latency_ms": 328.27333599561825,
+          "completion_tokens": 37
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a proration credit related to a seat reduction, which falls under billing responsibilities.",
+          "ttft_ms": 106.2375610054005,
+          "latency_ms": 299.3741649843287,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is a failed export due to an internal server error, which falls under technical support responsibilities.",
+          "ttft_ms": 105.15200899681076,
+          "latency_ms": 311.02422400726937,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The customer is inquiring about updating a corporate card prior to an annual renewal, which falls under billing responsibilities for payment and plan-related updates.",
+          "ttft_ms": 102.89836800075136,
+          "latency_ms": 352.9103490000125,
+          "completion_tokens": 41
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The request involves a privacy request for data deletion, which falls under human review as it requires legal and privacy compliance assessment.",
+          "ttft_ms": 104.64098301599734,
+          "latency_ms": 335.6958689983003,
+          "completion_tokens": 38
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes vague symptoms and lacks specific details, indicating an unclear intent that requires human review.",
+          "ttft_ms": 102.74250799557194,
+          "latency_ms": 302.5589300086722,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a potential privacy breach with shared customer data, which falls under human review due to security and privacy concerns.",
+          "ttft_ms": 102.91932898689993,
+          "latency_ms": 334.7923530091066,
+          "completion_tokens": 38
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factor access and authentication recovery, which falls under account access responsibilities.",
+          "ttft_ms": 106.06342798564583,
+          "latency_ms": 300.4049879964441,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API failures and intermittent HTTP 503 errors, which are technical performance problems related to service availability and request handling.",
+          "ttft_ms": 104.76100799860433,
+          "latency_ms": 348.2981779961847,
+          "completion_tokens": 40
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a plan change from monthly to annual billing and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 103.95342300762422,
+          "latency_ms": 337.9686000116635,
+          "completion_tokens": 37
+        }
+      ],
+      "metrics_before": {
+        "lines": [
+          "# HELP vllm:prefix_cache_queries_total Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_total counter",
+          "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_queries_created Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_created gauge",
+          "vllm:prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824972978e+09",
+          "# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_total counter",
+          "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_hits_created Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_created gauge",
+          "vllm:prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973104e+09",
+          "# HELP vllm:external_prefix_cache_queries_total External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_total counter",
+          "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_queries_created External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_created gauge",
+          "vllm:external_prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973223e+09",
+          "# HELP vllm:external_prefix_cache_hits_total External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_total counter",
+          "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_hits_created External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_created gauge",
+          "vllm:external_prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973345e+09",
+          "# HELP vllm:mm_cache_hits_total Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_total counter",
+          "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:mm_cache_hits_created Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_created gauge",
+          "vllm:mm_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973538e+09",
+          "vllm:prompt_tokens_by_source_total{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 0.0",
+          "vllm:prompt_tokens_by_source_created{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 1.7948644824974227e+09",
+          "vllm:cache_config_info{_block_size_resolved=\"True\",block_size=\"16\",cache_dtype=\"auto\",cache_hit_alignment_tokens=\"None\",effective_attention_block_size=\"16\",enable_mamba_shared_prefix_checkpoint=\"False\",enable_prefix_caching=\"False\",engine=\"0\",gpu_memory_utilization=\"0.6\",hash_block_size=\"None\",is_attention_free=\"False\",kv_cache_dtype_skip_layers=\"[]\",kv_cache_layout=\"None\",kv_cache_max_concurrency=\"19.8828125\",kv_cache_memory_bytes=\"None\",kv_cache_size_tokens=\"81440\",kv_offloading_backend=\"native\",kv_offloading_size=\"None\",kv_sharing_fast_prefill=\"False\",mamba_block_size=\"None\",mamba_cache_dtype=\"auto\",mamba_cache_mode=\"none\",mamba_page_size_padded=\"None\",mamba_ssm_cache_dtype=\"auto\",num_cpu_blocks=\"None\",num_gpu_blocks=\"5090\",num_gpu_blocks_override=\"None\",prefix_cache_retention_interval=\"0\",prefix_caching_hash_algo=\"sha256\",prefix_match_unit=\"None\",replayssm_buffer_len=\"16\",simple_cpu_offload_num_blocks=\"None\",skip_page_size_padded=\"None\",sliding_window=\"None\",swa_bounded_replay=\"True\",use_kda_recoverssm=\"False\",use_replayssm=\"False\",user_specified_block_size=\"False\"} 1.0"
+        ]
+      },
+      "metrics_after": {
+        "lines": [
+          "# HELP vllm:prefix_cache_queries_total Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_total counter",
+          "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_queries_created Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_created gauge",
+          "vllm:prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824972978e+09",
+          "# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_total counter",
+          "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_hits_created Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_created gauge",
+          "vllm:prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973104e+09",
+          "# HELP vllm:external_prefix_cache_queries_total External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_total counter",
+          "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_queries_created External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_created gauge",
+          "vllm:external_prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973223e+09",
+          "# HELP vllm:external_prefix_cache_hits_total External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_total counter",
+          "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_hits_created External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_created gauge",
+          "vllm:external_prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973345e+09",
+          "# HELP vllm:mm_cache_hits_total Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_total counter",
+          "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:mm_cache_hits_created Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_created gauge",
+          "vllm:mm_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973538e+09",
+          "vllm:prompt_tokens_by_source_total{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 0.0",
+          "vllm:prompt_tokens_by_source_created{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 1.7948644824974227e+09",
+          "vllm:cache_config_info{_block_size_resolved=\"True\",block_size=\"16\",cache_dtype=\"auto\",cache_hit_alignment_tokens=\"None\",effective_attention_block_size=\"16\",enable_mamba_shared_prefix_checkpoint=\"False\",enable_prefix_caching=\"False\",engine=\"0\",gpu_memory_utilization=\"0.6\",hash_block_size=\"None\",is_attention_free=\"False\",kv_cache_dtype_skip_layers=\"[]\",kv_cache_layout=\"None\",kv_cache_max_concurrency=\"19.8828125\",kv_cache_memory_bytes=\"None\",kv_cache_size_tokens=\"81440\",kv_offloading_backend=\"native\",kv_offloading_size=\"None\",kv_sharing_fast_prefill=\"False\",mamba_block_size=\"None\",mamba_cache_dtype=\"auto\",mamba_cache_mode=\"none\",mamba_page_size_padded=\"None\",mamba_ssm_cache_dtype=\"auto\",num_cpu_blocks=\"None\",num_gpu_blocks=\"5090\",num_gpu_blocks_override=\"None\",prefix_cache_retention_interval=\"0\",prefix_caching_hash_algo=\"sha256\",prefix_match_unit=\"None\",replayssm_buffer_len=\"16\",simple_cpu_offload_num_blocks=\"None\",skip_page_size_padded=\"None\",sliding_window=\"None\",swa_bounded_replay=\"True\",use_kda_recoverssm=\"False\",use_replayssm=\"False\",user_specified_block_size=\"False\"} 1.0"
+        ]
+      },
+      "cache_delta": {
+        "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+      }
+    },
+    {
+      "concurrency": 4,
+      "requests": 48,
+      "successful": 48,
+      "errors": 0,
+      "correct": 48,
+      "accuracy_pct": 100.0,
+      "wall_seconds": 7.709,
+      "successful_requests_per_second": 6.23,
+      "output_tokens_per_second": 221.44,
+      "p95_ttft_ms": 269.6,
+      "p95_latency_ms": 818.64,
+      "outcomes": [
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and account access recovery, specifically a reset link that has expired, which falls under account access ownership.",
+          "ttft_ms": 183.74749101349153,
+          "latency_ms": 846.6515619948041,
+          "completion_tokens": 41
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factor access and authentication recovery, which falls under account access responsibilities.",
+          "ttft_ms": 269.6008009952493,
+          "latency_ms": 608.0254779953975,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves invoice details and correction of legal entity and tax ID, which falls under billing ownership.",
+          "ttft_ms": 356.22585198143497,
+          "latency_ms": 632.422738999594,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment timing, which falls under billing responsibilities for charge disputes and payment failures.",
+          "ttft_ms": 379.9563600041438,
+          "latency_ms": 818.6421440041158,
+          "completion_tokens": 36
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a privacy request and legal subpoena, which falls under human review as specified in the policy.",
+          "ttft_ms": 121.4115480252076,
+          "latency_ms": 636.8001880182419,
+          "completion_tokens": 35
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The request involves a privacy request for data deletion, which falls under human review due to legal and privacy implications.",
+          "ttft_ms": 186.96655001258478,
+          "latency_ms": 652.764689992182,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a performance problem with the dashboard when selecting a long date range, which is a product feature error.",
+          "ttft_ms": 122.70475502009504,
+          "latency_ms": 721.8008789932355,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a proration credit related to seat reduction, which falls under billing responsibilities.",
+          "ttft_ms": 184.53244998818263,
+          "latency_ms": 508.65380800678395,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a plan change from monthly to annual billing and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 127.80479999491945,
+          "latency_ms": 651.8573990033474,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and inability to receive a verification code, which falls under account access responsibilities.",
+          "ttft_ms": 256.0233380063437,
+          "latency_ms": 619.7268890100531,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API failures and intermittent HTTP 503 errors, which are technical performance problems related to service availability and request handling.",
+          "ttft_ms": 206.05501800309867,
+          "latency_ms": 756.7712849995587,
+          "completion_tokens": 40
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a repeated notification from the Slack integration, which is a product feature behavior and falls under technical support responsibilities.",
+          "ttft_ms": 123.75083999359049,
+          "latency_ms": 570.9752140101045,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a suspected compromise of a contractor's API key, which falls under security concerns and requires human review for assessment.",
+          "ttft_ms": 192.44241798878647,
+          "latency_ms": 745.7456489792094,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The request involves account recovery, which falls under account access ownership.",
+          "ttft_ms": 200.16919099725783,
+          "latency_ms": 570.2303859870881,
+          "completion_tokens": 27
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes vague symptoms and lacks specific details, indicating an unclear intent that requires human review.",
+          "ttft_ms": 196.83017500210553,
+          "latency_ms": 538.929089991143,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is a failed export due to an internal server error, which falls under technical support responsibilities.",
+          "ttft_ms": 214.00859800633043,
+          "latency_ms": 633.8509670167696,
+          "completion_tokens": 34
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes a suspected compromise involving unauthorized sign-ins and a new admin, which falls under security concerns and requires human review.",
+          "ttft_ms": 113.13008301658556,
+          "latency_ms": 675.0927310204133,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue is a locked account due to multiple failed login attempts, which falls under account access responsibilities.",
+          "ttft_ms": 193.3371420018375,
+          "latency_ms": 640.4927070252597,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The customer is inquiring about updating a corporate card prior to an annual renewal, which falls under billing responsibilities for payment and plan-related updates.",
+          "ttft_ms": 214.85630198731087,
+          "latency_ms": 859.3793269828893,
+          "completion_tokens": 41
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing ownership.",
+          "ttft_ms": 205.60511099756695,
+          "latency_ms": 520.9980630024802,
+          "completion_tokens": 29
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a failed export with missing data, which is a technical functionality problem despite the browser showing correct record count.",
+          "ttft_ms": 127.48937998549081,
+          "latency_ms": 666.8044840043876,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factors and account recovery, which falls under account access ownership.",
+          "ttft_ms": 202.6795679994393,
+          "latency_ms": 538.9831170032267,
+          "completion_tokens": 31
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a potential privacy breach with shared customer data, which falls under human review due to security and privacy concerns.",
+          "ttft_ms": 204.88243500585668,
+          "latency_ms": 753.5712410171982,
+          "completion_tokens": 38
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is the app crashing when attaching a JPEG, which is a product functionality failure, not a billing, account access, or security concern.",
+          "ttft_ms": 116.71946698334068,
+          "latency_ms": 705.5297869956121,
+          "completion_tokens": 43
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a suspected compromise of a contractor's API key, which falls under security concerns and requires human review for assessment.",
+          "ttft_ms": 196.7130239936523,
+          "latency_ms": 749.9916339875199,
+          "completion_tokens": 39
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves invoice details and correction of legal entity and tax ID, which falls under billing ownership.",
+          "ttft_ms": 204.1927800164558,
+          "latency_ms": 617.3873759980779,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and inability to receive a verification code, which falls under account access responsibilities.",
+          "ttft_ms": 113.93424597918056,
+          "latency_ms": 633.5110919899307,
+          "completion_tokens": 36
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The request involves account recovery, which falls under account access ownership.",
+          "ttft_ms": 117.64633798156865,
+          "latency_ms": 567.6959289994556,
+          "completion_tokens": 27
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a performance problem with the dashboard when selecting a long date range, which is a product feature error.",
+          "ttft_ms": 113.62866399576887,
+          "latency_ms": 641.8616390146781,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing ownership.",
+          "ttft_ms": 113.96551801590249,
+          "latency_ms": 494.1738400084432,
+          "completion_tokens": 29
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes a suspected compromise involving unauthorized sign-ins and a new admin, which falls under security concerns and requires human review.",
+          "ttft_ms": 113.60364602296613,
+          "latency_ms": 654.8868500103708,
+          "completion_tokens": 39
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment timing, which falls under billing responsibilities for charge disputes and payment failures.",
+          "ttft_ms": 112.56551899714395,
+          "latency_ms": 549.395795998862,
+          "completion_tokens": 36
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factors and account recovery, which falls under account access ownership.",
+          "ttft_ms": 129.38978400779888,
+          "latency_ms": 599.24695501104,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a repeated notification from the Slack integration, which is a product feature behavior and falls under technical support responsibilities.",
+          "ttft_ms": 190.914951992454,
+          "latency_ms": 715.8216999960132,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue is a locked account due to multiple failed login attempts, which falls under account access responsibilities.",
+          "ttft_ms": 191.21986802201718,
+          "latency_ms": 620.4280030215159,
+          "completion_tokens": 34
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is the app crashing when attaching a JPEG, which is a product functionality failure, not a billing, account access, or security concern.",
+          "ttft_ms": 200.97671597613953,
+          "latency_ms": 773.3463420008775,
+          "completion_tokens": 43
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a failed export with missing data, which is a technical functionality problem despite the browser showing correct record count.",
+          "ttft_ms": 112.38076098379679,
+          "latency_ms": 641.0246930026915,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a privacy request and legal subpoena, which falls under human review as specified in the policy.",
+          "ttft_ms": 114.68877000152133,
+          "latency_ms": 625.2027669979725,
+          "completion_tokens": 35
+        },
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost or expired password reset link, which falls under account access responsibilities for login and verification mail.",
+          "ttft_ms": 114.17499699746259,
+          "latency_ms": 641.2995450082235,
+          "completion_tokens": 37
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a proration credit related to a seat reduction, which falls under billing responsibilities.",
+          "ttft_ms": 126.96992998826317,
+          "latency_ms": 608.9606850000564,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is a failed export due to an internal server error, which falls under technical support responsibilities.",
+          "ttft_ms": 120.11517400969751,
+          "latency_ms": 623.7910040072165,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The customer is inquiring about updating a corporate card prior to an annual renewal, which falls under billing responsibilities for payment and plan-related updates.",
+          "ttft_ms": 114.23666999326088,
+          "latency_ms": 672.69556800602,
+          "completion_tokens": 41
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The request involves a privacy request for data deletion, which falls under human review due to legal and privacy implications.",
+          "ttft_ms": 113.02756099030375,
+          "latency_ms": 632.1803359896876,
+          "completion_tokens": 36
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes vague symptoms and lacks specific details, indicating an unclear intent that requires human review.",
+          "ttft_ms": 114.49266001000069,
+          "latency_ms": 606.6080250020605,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a potential privacy breach with shared customer data, which falls under human review for suspected compromise and data exposure.",
+          "ttft_ms": 113.65779599873349,
+          "latency_ms": 647.5611269997898,
+          "completion_tokens": 38
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factor access and authentication recovery, which falls under account access responsibilities.",
+          "ttft_ms": 114.24600999453105,
+          "latency_ms": 516.1864010151476,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API failures and intermittent HTTP 503 errors, which are technical performance problems related to service availability and request handling.",
+          "ttft_ms": 114.14979898836464,
+          "latency_ms": 487.75240598479286,
+          "completion_tokens": 40
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a plan change from monthly to annual billing and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 116.92383998888545,
+          "latency_ms": 384.9472499859985,
+          "completion_tokens": 37
+        }
+      ],
+      "metrics_before": {
+        "lines": [
+          "# HELP vllm:prefix_cache_queries_total Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_total counter",
+          "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_queries_created Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_created gauge",
+          "vllm:prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824972978e+09",
+          "# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_total counter",
+          "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_hits_created Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_created gauge",
+          "vllm:prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973104e+09",
+          "# HELP vllm:external_prefix_cache_queries_total External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_total counter",
+          "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_queries_created External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_created gauge",
+          "vllm:external_prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973223e+09",
+          "# HELP vllm:external_prefix_cache_hits_total External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_total counter",
+          "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_hits_created External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_created gauge",
+          "vllm:external_prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973345e+09",
+          "# HELP vllm:mm_cache_hits_total Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_total counter",
+          "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:mm_cache_hits_created Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_created gauge",
+          "vllm:mm_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973538e+09",
+          "vllm:prompt_tokens_by_source_total{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 0.0",
+          "vllm:prompt_tokens_by_source_created{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 1.7948644824974227e+09",
+          "vllm:cache_config_info{_block_size_resolved=\"True\",block_size=\"16\",cache_dtype=\"auto\",cache_hit_alignment_tokens=\"None\",effective_attention_block_size=\"16\",enable_mamba_shared_prefix_checkpoint=\"False\",enable_prefix_caching=\"False\",engine=\"0\",gpu_memory_utilization=\"0.6\",hash_block_size=\"None\",is_attention_free=\"False\",kv_cache_dtype_skip_layers=\"[]\",kv_cache_layout=\"None\",kv_cache_max_concurrency=\"19.8828125\",kv_cache_memory_bytes=\"None\",kv_cache_size_tokens=\"81440\",kv_offloading_backend=\"native\",kv_offloading_size=\"None\",kv_sharing_fast_prefill=\"False\",mamba_block_size=\"None\",mamba_cache_dtype=\"auto\",mamba_cache_mode=\"none\",mamba_page_size_padded=\"None\",mamba_ssm_cache_dtype=\"auto\",num_cpu_blocks=\"None\",num_gpu_blocks=\"5090\",num_gpu_blocks_override=\"None\",prefix_cache_retention_interval=\"0\",prefix_caching_hash_algo=\"sha256\",prefix_match_unit=\"None\",replayssm_buffer_len=\"16\",simple_cpu_offload_num_blocks=\"None\",skip_page_size_padded=\"None\",sliding_window=\"None\",swa_bounded_replay=\"True\",use_kda_recoverssm=\"False\",use_replayssm=\"False\",user_specified_block_size=\"False\"} 1.0"
+        ]
+      },
+      "metrics_after": {
+        "lines": [
+          "# HELP vllm:prefix_cache_queries_total Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_total counter",
+          "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_queries_created Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_created gauge",
+          "vllm:prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824972978e+09",
+          "# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_total counter",
+          "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_hits_created Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_created gauge",
+          "vllm:prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973104e+09",
+          "# HELP vllm:external_prefix_cache_queries_total External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_total counter",
+          "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_queries_created External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_created gauge",
+          "vllm:external_prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973223e+09",
+          "# HELP vllm:external_prefix_cache_hits_total External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_total counter",
+          "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_hits_created External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_created gauge",
+          "vllm:external_prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973345e+09",
+          "# HELP vllm:mm_cache_hits_total Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_total counter",
+          "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:mm_cache_hits_created Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_created gauge",
+          "vllm:mm_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973538e+09",
+          "vllm:prompt_tokens_by_source_total{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 0.0",
+          "vllm:prompt_tokens_by_source_created{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 1.7948644824974227e+09",
+          "vllm:cache_config_info{_block_size_resolved=\"True\",block_size=\"16\",cache_dtype=\"auto\",cache_hit_alignment_tokens=\"None\",effective_attention_block_size=\"16\",enable_mamba_shared_prefix_checkpoint=\"False\",enable_prefix_caching=\"False\",engine=\"0\",gpu_memory_utilization=\"0.6\",hash_block_size=\"None\",is_attention_free=\"False\",kv_cache_dtype_skip_layers=\"[]\",kv_cache_layout=\"None\",kv_cache_max_concurrency=\"19.8828125\",kv_cache_memory_bytes=\"None\",kv_cache_size_tokens=\"81440\",kv_offloading_backend=\"native\",kv_offloading_size=\"None\",kv_sharing_fast_prefill=\"False\",mamba_block_size=\"None\",mamba_cache_dtype=\"auto\",mamba_cache_mode=\"none\",mamba_page_size_padded=\"None\",mamba_ssm_cache_dtype=\"auto\",num_cpu_blocks=\"None\",num_gpu_blocks=\"5090\",num_gpu_blocks_override=\"None\",prefix_cache_retention_interval=\"0\",prefix_caching_hash_algo=\"sha256\",prefix_match_unit=\"None\",replayssm_buffer_len=\"16\",simple_cpu_offload_num_blocks=\"None\",skip_page_size_padded=\"None\",sliding_window=\"None\",swa_bounded_replay=\"True\",use_kda_recoverssm=\"False\",use_replayssm=\"False\",user_specified_block_size=\"False\"} 1.0"
+        ]
+      },
+      "cache_delta": {
+        "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+      }
+    },
+    {
+      "concurrency": 8,
+      "requests": 48,
+      "successful": 48,
+      "errors": 0,
+      "correct": 48,
+      "accuracy_pct": 100.0,
+      "wall_seconds": 6.161,
+      "successful_requests_per_second": 7.79,
+      "output_tokens_per_second": 276.74,
+      "p95_ttft_ms": 623.97,
+      "p95_latency_ms": 1309.57,
+      "outcomes": [
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost or expired password reset link, which falls under account access responsibilities for login and verification mail.",
+          "ttft_ms": 187.2653589816764,
+          "latency_ms": 1108.053903997643,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factor access and authentication recovery, which falls under account access responsibilities.",
+          "ttft_ms": 273.829454992665,
+          "latency_ms": 986.3689439953305,
+          "completion_tokens": 32
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves invoice details and correction of legal entity and tax ID, which falls under billing ownership.",
+          "ttft_ms": 536.8642550020013,
+          "latency_ms": 1108.2099920022301,
+          "completion_tokens": 33
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment timing, which falls under billing responsibilities for charge disputes and payment failures.",
+          "ttft_ms": 359.7273530031089,
+          "latency_ms": 1117.2684649936855,
+          "completion_tokens": 36
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a privacy request and legal subpoena, which falls under human review as specified in the policy.",
+          "ttft_ms": 623.967941995943,
+          "latency_ms": 1212.7422359772027,
+          "completion_tokens": 35
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The request involves a privacy request for data deletion, which falls under human review as it requires legal and privacy compliance assessment.",
+          "ttft_ms": 446.9590369844809,
+          "latency_ms": 1301.7229789984412,
+          "completion_tokens": 38
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a performance problem with the dashboard when selecting a long date range, which is a product feature error.",
+          "ttft_ms": 713.5497179988306,
+          "latency_ms": 1389.8864390212111,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a proration credit related to seat reduction, which falls under billing responsibilities.",
+          "ttft_ms": 758.4947599971201,
+          "latency_ms": 1117.0114899869077,
+          "completion_tokens": 31
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a plan change from monthly to annual billing and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 121.7199319798965,
+          "latency_ms": 1042.5146280031186,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and inability to receive a verification code, which falls under account access responsibilities.",
+          "ttft_ms": 195.15441099065356,
+          "latency_ms": 1101.4061499736272,
+          "completion_tokens": 36
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API failures and intermittent HTTP 503 errors, which are technical performance problems related to service availability and request handling.",
+          "ttft_ms": 282.72141399793327,
+          "latency_ms": 1309.573427977739,
+          "completion_tokens": 40
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a repeated notification from the Slack integration, which is a product feature behavior and falls under technical support responsibilities.",
+          "ttft_ms": 361.3569599983748,
+          "latency_ms": 1200.7744130096398,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a suspected compromise of a contractor's API key, which falls under security concerns and requires human review for assessment.",
+          "ttft_ms": 449.05947099323384,
+          "latency_ms": 1386.4310219942126,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The request involves account recovery, which falls under account access ownership.",
+          "ttft_ms": 442.6918219833169,
+          "latency_ms": 791.0049629863352,
+          "completion_tokens": 27
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes vague symptoms and lacks specific details, indicating an unclear intent that requires human review.",
+          "ttft_ms": 444.2479359859135,
+          "latency_ms": 935.4448329831939,
+          "completion_tokens": 33
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is a failed export due to an internal server error, which falls under technical support responsibilities.",
+          "ttft_ms": 398.23724402231164,
+          "latency_ms": 947.4224380101077,
+          "completion_tokens": 34
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes a suspected compromise involving unauthorized sign-ins and a new admin, which falls under security concerns and requires human review.",
+          "ttft_ms": 121.95430099382065,
+          "latency_ms": 1111.3571430032607,
+          "completion_tokens": 39
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue is a locked account due to multiple failed login attempts, which falls under account access responsibilities.",
+          "ttft_ms": 193.36714802193455,
+          "latency_ms": 981.812523008557,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The customer is inquiring about updating a corporate card prior to an annual renewal, which falls under billing responsibilities for payment and plan-related updates.",
+          "ttft_ms": 129.30256099207327,
+          "latency_ms": 1222.3035829956643,
+          "completion_tokens": 41
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing ownership.",
+          "ttft_ms": 266.98179601226,
+          "latency_ms": 773.1409289990552,
+          "completion_tokens": 29
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a failed export with missing data, which is a technical functionality problem despite the browser showing correct record count.",
+          "ttft_ms": 272.2755160066299,
+          "latency_ms": 1103.3940330089536,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factors and account recovery, which falls under account access ownership.",
+          "ttft_ms": 338.76830502413213,
+          "latency_ms": 865.419195004506,
+          "completion_tokens": 31
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a potential privacy breach with shared customer data, which falls under human review due to security and privacy concerns.",
+          "ttft_ms": 348.81557399057783,
+          "latency_ms": 1108.0219669966027,
+          "completion_tokens": 38
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is the app crashing when attaching a JPEG, which is a product functionality failure, not a billing, account access, or security concern.",
+          "ttft_ms": 295.13171801227145,
+          "latency_ms": 1244.3237639963627,
+          "completion_tokens": 43
+        },
+        {
+          "id": "H06",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a suspected compromise of a contractor's API key, which falls under security concerns and requires human review for assessment.",
+          "ttft_ms": 193.42874799622223,
+          "latency_ms": 1197.5640830060001,
+          "completion_tokens": 39
+        },
+        {
+          "id": "B02",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves invoice details and correction of legal entity and tax ID, which falls under billing ownership.",
+          "ttft_ms": 209.87813000101596,
+          "latency_ms": 1067.1815649839118,
+          "completion_tokens": 33
+        },
+        {
+          "id": "A05",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost second factor and inability to receive a verification code, which falls under account access responsibilities.",
+          "ttft_ms": 278.1611050013453,
+          "latency_ms": 1093.2575470069423,
+          "completion_tokens": 36
+        },
+        {
+          "id": "A03",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The request involves account recovery, which falls under account access ownership.",
+          "ttft_ms": 210.70087401312776,
+          "latency_ms": 769.6120690088719,
+          "completion_tokens": 27
+        },
+        {
+          "id": "T05",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a performance problem with the dashboard when selecting a long date range, which is a product feature error.",
+          "ttft_ms": 192.3203459882643,
+          "latency_ms": 1088.0838019947987,
+          "completion_tokens": 36
+        },
+        {
+          "id": "B01",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves duplicate charges and a refund request, which falls under billing ownership.",
+          "ttft_ms": 198.42605100711808,
+          "latency_ms": 777.0995330065489,
+          "completion_tokens": 29
+        },
+        {
+          "id": "H01",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes a suspected compromise involving unauthorized sign-ins and a new admin, which falls under security concerns and requires human review.",
+          "ttft_ms": 206.1644530040212,
+          "latency_ms": 1117.8957029769663,
+          "completion_tokens": 39
+        },
+        {
+          "id": "B05",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a disputed charge related to payment timing, which falls under billing responsibilities for charge disputes and payment failures.",
+          "ttft_ms": 117.9953190148808,
+          "latency_ms": 1002.4817350204103,
+          "completion_tokens": 36
+        },
+        {
+          "id": "A06",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factors and account recovery, which falls under account access ownership.",
+          "ttft_ms": 118.38632999570109,
+          "latency_ms": 962.2904490097426,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T02",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a repeated notification from the Slack integration, which is a product feature behavior and falls under technical support responsibilities.",
+          "ttft_ms": 122.16323200846091,
+          "latency_ms": 1019.4424859946594,
+          "completion_tokens": 37
+        },
+        {
+          "id": "A04",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The root issue is a locked account due to multiple failed login attempts, which falls under account access responsibilities.",
+          "ttft_ms": 277.57103499607183,
+          "latency_ms": 1007.3615050059743,
+          "completion_tokens": 35
+        },
+        {
+          "id": "T06",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is the app crashing when attaching a JPEG, which is a product functionality failure, not a billing, account access, or security concern.",
+          "ttft_ms": 190.15692500397563,
+          "latency_ms": 1237.999523000326,
+          "completion_tokens": 43
+        },
+        {
+          "id": "T01",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves a failed export with missing data, which is a technical functionality problem despite the browser showing correct record count.",
+          "ttft_ms": 301.20116099715233,
+          "latency_ms": 1112.070188013604,
+          "completion_tokens": 37
+        },
+        {
+          "id": "H04",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a privacy request and legal subpoena, which falls under human review as specified in the policy.",
+          "ttft_ms": 117.91870498564094,
+          "latency_ms": 837.9910759977065,
+          "completion_tokens": 35
+        },
+        {
+          "id": "A02",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves a lost or expired password reset link, which falls under account access responsibilities for login and verification mail.",
+          "ttft_ms": 122.78833601158112,
+          "latency_ms": 1096.9530940055847,
+          "completion_tokens": 37
+        },
+        {
+          "id": "B03",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The ticket involves a proration credit related to seat reduction, which falls under billing responsibilities.",
+          "ttft_ms": 122.93294598930515,
+          "latency_ms": 879.3270659807604,
+          "completion_tokens": 31
+        },
+        {
+          "id": "T03",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The root issue is a failed export due to an internal server error, which falls under technical support responsibilities.",
+          "ttft_ms": 118.08350999490358,
+          "latency_ms": 989.3632919993252,
+          "completion_tokens": 34
+        },
+        {
+          "id": "B04",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The customer is inquiring about updating a corporate card prior to an annual renewal, which falls under billing responsibilities for payment and plan-related updates.",
+          "ttft_ms": 118.41576898586936,
+          "latency_ms": 967.327235994162,
+          "completion_tokens": 41
+        },
+        {
+          "id": "H02",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The request involves a privacy request for data deletion, which falls under human review due to legal and privacy implications.",
+          "ttft_ms": 118.35534300189465,
+          "latency_ms": 841.0038779838942,
+          "completion_tokens": 36
+        },
+        {
+          "id": "H05",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket describes vague symptoms and lacks specific details, indicating an unclear intent that requires human review.",
+          "ttft_ms": 125.68932099384256,
+          "latency_ms": 735.500234994106,
+          "completion_tokens": 33
+        },
+        {
+          "id": "H03",
+          "expected": "human_review",
+          "queue": "human_review",
+          "reason": "The ticket involves a potential privacy breach with shared customer data, which falls under human review due to security and privacy concerns.",
+          "ttft_ms": 196.620235015871,
+          "latency_ms": 763.0311519897077,
+          "completion_tokens": 38
+        },
+        {
+          "id": "A01",
+          "expected": "account_access",
+          "queue": "account_access",
+          "reason": "The issue involves lost second factor access and authentication recovery, which falls under account access responsibilities.",
+          "ttft_ms": 197.21891899826005,
+          "latency_ms": 634.3661150021944,
+          "completion_tokens": 32
+        },
+        {
+          "id": "T04",
+          "expected": "technical",
+          "queue": "technical",
+          "reason": "The issue involves API failures and intermittent HTTP 503 errors, which are technical performance problems related to service availability and request handling.",
+          "ttft_ms": 122.99687901395373,
+          "latency_ms": 528.8586450042203,
+          "completion_tokens": 40
+        },
+        {
+          "id": "B06",
+          "expected": "billing",
+          "queue": "billing",
+          "reason": "The request involves a plan change from monthly to annual billing and confirmation of the amount due, which falls under billing responsibilities.",
+          "ttft_ms": 121.44153800909407,
+          "latency_ms": 419.0110900090076,
+          "completion_tokens": 37
+        }
+      ],
+      "metrics_before": {
+        "lines": [
+          "# HELP vllm:prefix_cache_queries_total Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_total counter",
+          "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_queries_created Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_created gauge",
+          "vllm:prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824972978e+09",
+          "# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_total counter",
+          "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_hits_created Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_created gauge",
+          "vllm:prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973104e+09",
+          "# HELP vllm:external_prefix_cache_queries_total External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_total counter",
+          "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_queries_created External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_created gauge",
+          "vllm:external_prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973223e+09",
+          "# HELP vllm:external_prefix_cache_hits_total External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_total counter",
+          "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_hits_created External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_created gauge",
+          "vllm:external_prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973345e+09",
+          "# HELP vllm:mm_cache_hits_total Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_total counter",
+          "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:mm_cache_hits_created Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_created gauge",
+          "vllm:mm_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973538e+09",
+          "vllm:prompt_tokens_by_source_total{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 0.0",
+          "vllm:prompt_tokens_by_source_created{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 1.7948644824974227e+09",
+          "vllm:cache_config_info{_block_size_resolved=\"True\",block_size=\"16\",cache_dtype=\"auto\",cache_hit_alignment_tokens=\"None\",effective_attention_block_size=\"16\",enable_mamba_shared_prefix_checkpoint=\"False\",enable_prefix_caching=\"False\",engine=\"0\",gpu_memory_utilization=\"0.6\",hash_block_size=\"None\",is_attention_free=\"False\",kv_cache_dtype_skip_layers=\"[]\",kv_cache_layout=\"None\",kv_cache_max_concurrency=\"19.8828125\",kv_cache_memory_bytes=\"None\",kv_cache_size_tokens=\"81440\",kv_offloading_backend=\"native\",kv_offloading_size=\"None\",kv_sharing_fast_prefill=\"False\",mamba_block_size=\"None\",mamba_cache_dtype=\"auto\",mamba_cache_mode=\"none\",mamba_page_size_padded=\"None\",mamba_ssm_cache_dtype=\"auto\",num_cpu_blocks=\"None\",num_gpu_blocks=\"5090\",num_gpu_blocks_override=\"None\",prefix_cache_retention_interval=\"0\",prefix_caching_hash_algo=\"sha256\",prefix_match_unit=\"None\",replayssm_buffer_len=\"16\",simple_cpu_offload_num_blocks=\"None\",skip_page_size_padded=\"None\",sliding_window=\"None\",swa_bounded_replay=\"True\",use_kda_recoverssm=\"False\",use_replayssm=\"False\",user_specified_block_size=\"False\"} 1.0"
+        ]
+      },
+      "metrics_after": {
+        "lines": [
+          "# HELP vllm:prefix_cache_queries_total Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_total counter",
+          "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_queries_created Prefix cache queries, in terms of number of queried tokens.",
+          "# TYPE vllm:prefix_cache_queries_created gauge",
+          "vllm:prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824972978e+09",
+          "# HELP vllm:prefix_cache_hits_total Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_total counter",
+          "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:prefix_cache_hits_created Prefix cache hits, in terms of number of cached tokens.",
+          "# TYPE vllm:prefix_cache_hits_created gauge",
+          "vllm:prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973104e+09",
+          "# HELP vllm:external_prefix_cache_queries_total External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_total counter",
+          "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_queries_created External prefix cache queries from KV connector cross-instance cache sharing, in terms of number of queried tokens.",
+          "# TYPE vllm:external_prefix_cache_queries_created gauge",
+          "vllm:external_prefix_cache_queries_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973223e+09",
+          "# HELP vllm:external_prefix_cache_hits_total External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_total counter",
+          "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:external_prefix_cache_hits_created External prefix cache hits from KV connector cross-instance cache sharing, in terms of number of cached tokens.",
+          "# TYPE vllm:external_prefix_cache_hits_created gauge",
+          "vllm:external_prefix_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973345e+09",
+          "# HELP vllm:mm_cache_hits_total Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_total counter",
+          "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"} 0.0",
+          "# HELP vllm:mm_cache_hits_created Multi-modal cache hits, in terms of number of cached items.",
+          "# TYPE vllm:mm_cache_hits_created gauge",
+          "vllm:mm_cache_hits_created{engine=\"0\",model_name=\"support-triage\"} 1.7948644824973538e+09",
+          "vllm:prompt_tokens_by_source_total{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 0.0",
+          "vllm:prompt_tokens_by_source_created{engine=\"0\",model_name=\"support-triage\",source=\"local_cache_hit\"} 1.7948644824974227e+09",
+          "vllm:cache_config_info{_block_size_resolved=\"True\",block_size=\"16\",cache_dtype=\"auto\",cache_hit_alignment_tokens=\"None\",effective_attention_block_size=\"16\",enable_mamba_shared_prefix_checkpoint=\"False\",enable_prefix_caching=\"False\",engine=\"0\",gpu_memory_utilization=\"0.6\",hash_block_size=\"None\",is_attention_free=\"False\",kv_cache_dtype_skip_layers=\"[]\",kv_cache_layout=\"None\",kv_cache_max_concurrency=\"19.8828125\",kv_cache_memory_bytes=\"None\",kv_cache_size_tokens=\"81440\",kv_offloading_backend=\"native\",kv_offloading_size=\"None\",kv_sharing_fast_prefill=\"False\",mamba_block_size=\"None\",mamba_cache_dtype=\"auto\",mamba_cache_mode=\"none\",mamba_page_size_padded=\"None\",mamba_ssm_cache_dtype=\"auto\",num_cpu_blocks=\"None\",num_gpu_blocks=\"5090\",num_gpu_blocks_override=\"None\",prefix_cache_retention_interval=\"0\",prefix_caching_hash_algo=\"sha256\",prefix_match_unit=\"None\",replayssm_buffer_len=\"16\",simple_cpu_offload_num_blocks=\"None\",skip_page_size_padded=\"None\",sliding_window=\"None\",swa_bounded_replay=\"True\",use_kda_recoverssm=\"False\",use_replayssm=\"False\",user_specified_block_size=\"False\"} 1.0"
+        ]
+      },
+      "cache_delta": {
+        "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+        "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+      }
+    }
+  ]
+}
