@@ -1,0 +1,204 @@
+{
+  "at": "2026-11-16T21:39:13.336396+00:00",
+  "server": {
+    "engine": "vllm",
+    "prefix_cache": "off",
+    "kv_offload": "none",
+    "max_model_len": 4096,
+    "gpu_memory_fraction": 0.6,
+    "flags": [
+      "vllm",
+      "serve",
+      "Qwen/Qwen3-4B-Instruct-2507",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18000",
+      "--revision",
+      "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "--dtype",
+      "bfloat16",
+      "--served-model-name",
+      "support-triage",
+      "--max-model-len",
+      "4096",
+      "--max-num-seqs",
+      "16",
+      "--gpu-memory-utilization",
+      "0.60",
+      "--disable-prefix-caching",
+      "--attention-backend",
+      "FLASH_ATTN",
+      "--generation-config",
+      "vllm"
+    ],
+    "versions": {
+      "vllm": "0.33.0",
+      "torch": "2.14.0+cu132",
+      "transformers": "5.20.2",
+      "triton": "3.8.0"
+    },
+    "python": "3.12.16",
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "VLLM_USE_FLASHINFER_SAMPLER": "0",
+      "HF_HUB_OFFLINE": "1"
+    },
+    "lmcache_config": null,
+    "gpu_before_launch": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "6176",
+      "utilization.gpu": "1",
+      "temperature.gpu": "52.80"
+    },
+    "gpu_after_start": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "26221",
+      "utilization.gpu": "0",
+      "temperature.gpu": "45.00"
+    },
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "distro": "Ubuntu-26.04"
+  },
+  "go": "go1.26.11",
+  "python": "3.12.16",
+  "runs": [
+    {
+      "client": "python",
+      "file": "go-parity-python-1.json",
+      "exit_code": 0
+    },
+    {
+      "client": "go",
+      "file": "go-parity-go-1.json",
+      "exit_code": 0
+    },
+    {
+      "client": "go",
+      "file": "go-parity-go-2.json",
+      "exit_code": 0
+    },
+    {
+      "client": "python",
+      "file": "go-parity-python-2.json",
+      "exit_code": 0
+    }
+  ],
+  "comparison": [
+    {
+      "concurrency": 1,
+      "checks": {
+        "matching_top_level_schema": true,
+        "matching_inputs": true,
+        "matching_outcome_schema": true,
+        "matching_workload_order": true,
+        "matching_routing_counts": true,
+        "zero_errors": true
+      },
+      "medians_ms": {
+        "ttft_ms": {
+          "python": 23.977,
+          "go": 24.451,
+          "go_minus_python": 0.474,
+          "tolerance": 10,
+          "passes_tolerance": true
+        },
+        "latency_ms": {
+          "python": 220.143,
+          "go": 222.494,
+          "go_minus_python": 2.351,
+          "tolerance": 22.014,
+          "passes_tolerance": true
+        }
+      },
+      "route_counts": {
+        "go": [
+          44,
+          44
+        ],
+        "python": [
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "concurrency": 4,
+      "checks": {
+        "matching_top_level_schema": true,
+        "matching_inputs": true,
+        "matching_outcome_schema": true,
+        "matching_workload_order": true,
+        "matching_routing_counts": true,
+        "zero_errors": true
+      },
+      "medians_ms": {
+        "ttft_ms": {
+          "python": 27.935,
+          "go": 27.79,
+          "go_minus_python": -0.145,
+          "tolerance": 10,
+          "passes_tolerance": true
+        },
+        "latency_ms": {
+          "python": 253.963,
+          "go": 256.593,
+          "go_minus_python": 2.629,
+          "tolerance": 25.396,
+          "passes_tolerance": true
+        }
+      },
+      "route_counts": {
+        "go": [
+          44,
+          44
+        ],
+        "python": [
+          44,
+          44
+        ]
+      }
+    },
+    {
+      "concurrency": 8,
+      "checks": {
+        "matching_top_level_schema": true,
+        "matching_inputs": true,
+        "matching_outcome_schema": true,
+        "matching_workload_order": true,
+        "matching_routing_counts": true,
+        "zero_errors": true
+      },
+      "medians_ms": {
+        "ttft_ms": {
+          "python": 33.348,
+          "go": 34.316,
+          "go_minus_python": 0.968,
+          "tolerance": 10,
+          "passes_tolerance": true
+        },
+        "latency_ms": {
+          "python": 297.069,
+          "go": 299.549,
+          "go_minus_python": 2.48,
+          "tolerance": 29.707,
+          "passes_tolerance": true
+        }
+      },
+      "route_counts": {
+        "go": [
+          44,
+          44
+        ],
+        "python": [
+          44,
+          44
+        ]
+      }
+    }
+  ]
+}
