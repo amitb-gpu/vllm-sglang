@@ -1,0 +1,40 @@
+{
+  "checked_on": "2026-11-16",
+  "vllm": "0.33.0",
+  "lmcache": "0.5.7.post1",
+  "python": "3.12.16",
+  "torch": "2.14.0+cu132",
+  "torch_cuda": "13.2",
+  "release_build_metadata": "https://github.com/LMCache/LMCache/blob/v0.5.7.post1/pyproject.toml",
+  "attempts": [
+    {
+      "check": "Resolve with uv --torch-backend=cu132",
+      "status": "failed",
+      "error": "No solution found: the selected CUDA backend has no torchaudio==2.11.0."
+    },
+    {
+      "check": "Resolve with the baseline uv --torch-backend=auto",
+      "status": "passed",
+      "details": "Resolved vLLM 0.33.0, torch 2.14.0+cu132 and torchaudio 2.11.0+cpu with LMCache 0.5.7.post1. uv pip check passed."
+    },
+    {
+      "check": "Load the old native extension module name",
+      "status": "failed",
+      "error": "ModuleNotFoundError: No module named 'lmcache.c_ops'. The release packages the extension as lmcache.cuda_ops."
+    },
+    {
+      "check": "Load the adapter used by the built-in vLLM LMCacheConnectorV1",
+      "status": "failed",
+      "error": "ModuleNotFoundError: No module named 'lmcache.integration.vllm.vllm_v1_adapter'. The released adapter lives under lmcache.inprocess.integration.vllm."
+    },
+    {
+      "check": "Load the released LMCacheConnectorV1Dynamic and verify CPU and disk stores and reloads",
+      "status": "passed",
+      "connector_module": "lmcache.integration.vllm.lmcache_connector_v1",
+      "evidence": [
+        "offload-cpu-gate.json",
+        "offload-disk-gate.json"
+      ]
+    }
+  ]
+}

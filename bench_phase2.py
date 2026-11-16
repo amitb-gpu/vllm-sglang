@@ -202,16 +202,20 @@ def prefix_sweep(metadata, workload, tokenizer):
     })
 
 
+def snapshot_file(name):
+    # The snapshot is resolved from the same model and revision as the launcher.
+    path = subprocess.check_output(
+        ["bash", "-c", 'source settings.sh; printf "%s/hub/models--%s/snapshots/%s/%s" '
+         r'"$HF_HOME" "${model/\//--}" "$revision" "$1"', "bash", name],
+        cwd=ROOT, text=True,
+    )
+    return Path(path)
+
+
 def load_tokenizer():
     from tokenizers import Tokenizer
 
-    # The snapshot is resolved from the same model and revision as the launcher.
-    path = subprocess.check_output(
-        ["bash", "-c", 'source settings.sh; printf "%s/hub/models--%s/snapshots/%s/tokenizer.json" '
-         r'"$HF_HOME" "${model/\//--}" "$revision"'],
-        cwd=ROOT, text=True,
-    )
-    return Tokenizer.from_file(path)
+    return Tokenizer.from_file(str(snapshot_file("tokenizer.json")))
 
 
 def main():

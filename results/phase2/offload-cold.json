@@ -1,0 +1,925 @@
+{
+  "mode": "cold",
+  "gate": false,
+  "started_at_utc": "2026-11-16T21:33:27.243093+00:00",
+  "cells": [
+    {
+      "target_tokens": 1024,
+      "outcomes": [
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 461.56685799360275,
+          "latency_ms": 724.7190539783332,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 58.650649996707216,
+          "latency_ms": 249.27838498842902,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 57.29158202302642,
+          "latency_ms": 248.13802001881413,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 59.98338098288514,
+          "latency_ms": 253.0094119720161,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 58.70121001498774,
+          "latency_ms": 249.4295240030624,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 57.711675006430596,
+          "latency_ms": 248.42008299310692,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 60.10390701703727,
+          "latency_ms": 250.5079830007162,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 58.81917499937117,
+          "latency_ms": 250.9275689953938,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 61.19423601194285,
+          "latency_ms": 262.9073529969901,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 62.451395991956815,
+          "latency_ms": 262.96821699361317,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 60.11249899165705,
+          "latency_ms": 251.9797229906544,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 59.41223999252543,
+          "latency_ms": 250.0523309863638,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 1024
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 59.7,
+      "p95_ttft_ms": 62.45
+    },
+    {
+      "target_tokens": 2048,
+      "outcomes": [
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 111.08133802190423,
+          "latency_ms": 313.7603720242623,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 113.42662601964548,
+          "latency_ms": 325.1416090060957,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 114.2756030021701,
+          "latency_ms": 314.01796999853104,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 110.97887399955653,
+          "latency_ms": 314.5992489880882,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 106.99514800217003,
+          "latency_ms": 310.82035799045116,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 111.98141300701536,
+          "latency_ms": 308.7941179983318,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 108.5310940106865,
+          "latency_ms": 307.96253800508566,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 110.69082000176422,
+          "latency_ms": 309.3389770074282,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 112.05567797878757,
+          "latency_ms": 315.2809609891847,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 110.13472598278895,
+          "latency_ms": 309.6851570007857,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 110.36537299514748,
+          "latency_ms": 308.36918600834906,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket involves a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 107.4275349965319,
+          "latency_ms": 306.951290986035,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 2048
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 110.53,
+      "p95_ttft_ms": 114.28
+    },
+    {
+      "target_tokens": 4096,
+      "outcomes": [
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 215.09241001331247,
+          "latency_ms": 421.8452960194554,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 213.39190000435337,
+          "latency_ms": 421.46119798417203,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 209.33078401139937,
+          "latency_ms": 409.5500579860527,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 206.65478700539097,
+          "latency_ms": 406.7982150008902,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 209.52489000046626,
+          "latency_ms": 410.6934269948397,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 210.29044498573057,
+          "latency_ms": 413.77413598820567,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 216.15650597959757,
+          "latency_ms": 423.0785300023854,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 213.45035900594667,
+          "latency_ms": 418.40638598660007,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 217.4639879958704,
+          "latency_ms": 422.45749800349586,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 206.4672340056859,
+          "latency_ms": 407.4253560102079,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 207.3353300220333,
+          "latency_ms": 410.4446950077545,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing's ownership as defined in the policy.",
+          "ttft_ms": 217.15925598982722,
+          "latency_ms": 422.81263499171473,
+          "completion_tokens": 32,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 4096
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 209.91,
+      "p95_ttft_ms": 217.46
+    },
+    {
+      "target_tokens": 8192,
+      "outcomes": [
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 465.32282201224007,
+          "latency_ms": 672.6974500052165,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 458.7682339770254,
+          "latency_ms": 667.812473984668,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 461.29287299118005,
+          "latency_ms": 671.5962910093367,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 464.3394500017166,
+          "latency_ms": 676.0652269877028,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 461.9656889990438,
+          "latency_ms": 673.207805986749,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 460.73159799561836,
+          "latency_ms": 665.4906840121839,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 451.09327998943627,
+          "latency_ms": 655.0766899890732,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 451.31910001509823,
+          "latency_ms": 656.2613130081445,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 449.35023598372936,
+          "latency_ms": 653.7922919960693,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 451.26382098533213,
+          "latency_ms": 655.0686800037511,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 451.0510179970879,
+          "latency_ms": 655.2002169773914,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "queue": "billing",
+          "reason": "The ticket references a duplicate charge, which falls under billing ownership as defined in the policy.",
+          "ttft_ms": 451.6566480160691,
+          "latency_ms": 656.2608430103865,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 8192
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 451.49,
+      "p95_ttft_ms": 464.34
+    }
+  ],
+  "server": {
+    "engine": "vllm",
+    "prefix_cache": "off",
+    "kv_offload": "none",
+    "max_model_len": 8704,
+    "gpu_memory_fraction": 0.6,
+    "flags": [
+      "vllm",
+      "serve",
+      "Qwen/Qwen3-4B-Instruct-2507",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18000",
+      "--revision",
+      "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "--dtype",
+      "bfloat16",
+      "--served-model-name",
+      "support-triage",
+      "--max-model-len",
+      "8704",
+      "--max-num-seqs",
+      "16",
+      "--gpu-memory-utilization",
+      "0.60",
+      "--disable-prefix-caching",
+      "--attention-backend",
+      "FLASH_ATTN",
+      "--generation-config",
+      "vllm"
+    ],
+    "versions": {
+      "vllm": "0.33.0",
+      "torch": "2.14.0+cu132",
+      "transformers": "5.20.2",
+      "triton": "3.8.0",
+      "lmcache": "0.5.7.post1"
+    },
+    "python": "3.12.16",
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "VLLM_USE_FLASHINFER_SAMPLER": "0",
+      "HF_HUB_OFFLINE": "1"
+    },
+    "lmcache_config": null,
+    "gpu_before_launch": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "6176",
+      "utilization.gpu": "1",
+      "temperature.gpu": "40.50"
+    },
+    "gpu_after_start": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "25935",
+      "utilization.gpu": "0",
+      "temperature.gpu": "36.60"
+    },
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "distro": "Ubuntu-26.04"
+  },
+  "backend_startup_log": []
+}

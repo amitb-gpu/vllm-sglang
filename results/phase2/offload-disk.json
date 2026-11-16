@@ -1,0 +1,1893 @@
+{
+  "mode": "disk",
+  "gate": false,
+  "started_at_utc": "2026-11-16T21:36:03.424863+00:00",
+  "cells": [
+    {
+      "target_tokens": 1024,
+      "outcomes": [
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 127.62425898108631,
+          "latency_ms": 301.4743539970368,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 67.49262701487169,
+          "latency_ms": 241.84131401125342,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 66.5844629984349,
+          "latency_ms": 242.2111140040215,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 54.67420999775641,
+          "latency_ms": 229.69120999914594,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 55.781500006560236,
+          "latency_ms": 229.2681880062446,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 55.79664499964565,
+          "latency_ms": 229.01673597516492,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 53.182713978458196,
+          "latency_ms": 226.70602597645484,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 54.33463500230573,
+          "latency_ms": 227.61177099891938,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 65.98154598032124,
+          "latency_ms": 238.75990699161775,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 53.675788978580385,
+          "latency_ms": 227.20930899959058,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 58.52153798332438,
+          "latency_ms": 231.85351100983098,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 1024
+        },
+        {
+          "store_events": [
+            [
+              "1024",
+              "1024"
+            ]
+          ],
+          "disk_files_added": 4,
+          "disk_bytes_added": 150994944,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 52.541630982887,
+          "latency_ms": 227.78598999138921,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 1172.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 1024.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 1024,
+          "retrieve_events": [
+            [
+              "1024",
+              "1024",
+              "1024"
+            ]
+          ],
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 1024
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 55.23,
+      "p95_ttft_ms": 66.58
+    },
+    {
+      "target_tokens": 2048,
+      "outcomes": [
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 90.32667800784111,
+          "latency_ms": 277.8858960082289,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 285212672,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 89.52875700197183,
+          "latency_ms": 278.0014279996976,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 86.70245599932969,
+          "latency_ms": 274.21840498573147,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 82.99574500415474,
+          "latency_ms": 272.46578101767227,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 96.08253298210911,
+          "latency_ms": 290.9507379808929,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 84.86558898584917,
+          "latency_ms": 279.87246500561014,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 88.37418598704971,
+          "latency_ms": 284.513455000706,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 89.88351098378189,
+          "latency_ms": 284.64636800345033,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 88.04951200727373,
+          "latency_ms": 281.3140180078335,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 87.46696799062192,
+          "latency_ms": 281.4997920067981,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 85.18867401289754,
+          "latency_ms": 279.32941299513914,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 2048
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 8,
+          "disk_bytes_added": 301989888,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for charges, invoices, and payment failures.",
+          "ttft_ms": 100.19963001832366,
+          "latency_ms": 295.51881802035496,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 2196.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 2048.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 2048,
+          "retrieve_events": [
+            [
+              "2048",
+              "2048",
+              "2048"
+            ]
+          ],
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 2048
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 87.76,
+      "p95_ttft_ms": 100.2
+    },
+    {
+      "target_tokens": 4096,
+      "outcomes": [
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 165.48406801302917,
+          "latency_ms": 350.3887960105203,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 149.3417170131579,
+          "latency_ms": 331.61845401627943,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 148.7015530001372,
+          "latency_ms": 346.5833909867797,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 147.98693201737478,
+          "latency_ms": 331.9824520149268,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 146.99933098745532,
+          "latency_ms": 338.09485100209713,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 158.1494730198756,
+          "latency_ms": 343.40448200237006,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 148.4375490108505,
+          "latency_ms": 336.8183489947114,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 152.2360279923305,
+          "latency_ms": 336.7302390106488,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 146.51227099238895,
+          "latency_ms": 329.4517539907247,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 149.10443100961857,
+          "latency_ms": 331.59074900322594,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 144.85069198417477,
+          "latency_ms": 326.7007870017551,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 4096
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 16,
+          "disk_bytes_added": 603979776,
+          "queue": "billing",
+          "reason": "duplicate charge, which falls under billing's responsibility for duplicate charges and refund requests.",
+          "ttft_ms": 145.75602900004014,
+          "latency_ms": 327.93728000251576,
+          "completion_tokens": 29,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 4244.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 4096.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 4096,
+          "retrieve_events": [
+            [
+              "4096",
+              "4096",
+              "4096"
+            ]
+          ],
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 4096
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 148.21,
+      "p95_ttft_ms": 158.15
+    },
+    {
+      "target_tokens": 8192,
+      "outcomes": [
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 315.930703014601,
+          "latency_ms": 534.686247992795,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 0,
+          "warmup": true,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 278.4439850074705,
+          "latency_ms": 483.7941470032092,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 1,
+          "warmup": true,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 269.1194349899888,
+          "latency_ms": 472.7758009976242,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 2,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 268.85899700573646,
+          "latency_ms": 473.70575901004486,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 3,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 270.34084900515154,
+          "latency_ms": 480.7720190146938,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 4,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 269.8171610245481,
+          "latency_ms": 478.35585701977834,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 5,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 269.37730101053603,
+          "latency_ms": 474.8481160204392,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 6,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 292.3576980247162,
+          "latency_ms": 503.00603901268914,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 7,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 280.2470780152362,
+          "latency_ms": 491.70515799778514,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 8,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 279.63951099081896,
+          "latency_ms": 492.22269700840116,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 9,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 276.1022679915186,
+          "latency_ms": 487.5331829825882,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 10,
+          "warmup": false,
+          "document_tokens": 8192
+        },
+        {
+          "store_events": [
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ],
+            [
+              "2048",
+              "2048"
+            ]
+          ],
+          "disk_files_added": 32,
+          "disk_bytes_added": 1207959552,
+          "queue": "billing",
+          "reason": "duplicate charge on an invoice, which falls under billing responsibilities for duplicate charges and payment failures.",
+          "ttft_ms": 277.7248010097537,
+          "latency_ms": 486.24929299694486,
+          "completion_tokens": 31,
+          "metrics_delta": {
+            "vllm:prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0,
+            "vllm:external_prefix_cache_queries_total{engine=\"0\",model_name=\"support-triage\"}": 8339.0,
+            "vllm:external_prefix_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 8192.0,
+            "vllm:mm_cache_hits_total{engine=\"0\",model_name=\"support-triage\"}": 0.0
+          },
+          "retrieved_tokens": 8192,
+          "retrieve_events": [
+            [
+              "8192",
+              "8192",
+              "8192"
+            ]
+          ],
+          "trial": 11,
+          "warmup": false,
+          "document_tokens": 8192
+        }
+      ],
+      "successful": 10,
+      "errors": 0,
+      "median_ttft_ms": 273.22,
+      "p95_ttft_ms": 292.36
+    }
+  ],
+  "server": {
+    "engine": "vllm",
+    "prefix_cache": "off",
+    "kv_offload": "disk",
+    "max_model_len": 8704,
+    "gpu_memory_fraction": 0.6,
+    "flags": [
+      "vllm",
+      "serve",
+      "Qwen/Qwen3-4B-Instruct-2507",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18000",
+      "--revision",
+      "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "--dtype",
+      "bfloat16",
+      "--served-model-name",
+      "support-triage",
+      "--max-model-len",
+      "8704",
+      "--max-num-seqs",
+      "16",
+      "--gpu-memory-utilization",
+      "0.60",
+      "--disable-prefix-caching",
+      "--attention-backend",
+      "FLASH_ATTN",
+      "--generation-config",
+      "vllm",
+      "--kv-transfer-config",
+      "{\"kv_connector\":\"LMCacheConnectorV1Dynamic\",\"kv_connector_module_path\":\"lmcache.integration.vllm.lmcache_connector_v1\",\"kv_role\":\"kv_both\"}"
+    ],
+    "versions": {
+      "vllm": "0.33.0",
+      "torch": "2.14.0+cu132",
+      "transformers": "5.20.2",
+      "triton": "3.8.0",
+      "lmcache": "0.5.7.post1"
+    },
+    "python": "3.12.16",
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "VLLM_USE_FLASHINFER_SAMPLER": "0",
+      "HF_HUB_OFFLINE": "1",
+      "LMCACHE_USE_EXPERIMENTAL": "True",
+      "LMCACHE_TRACK_USAGE": "false"
+    },
+    "lmcache_config": "chunk_size: 256\nlocal_cpu: false\nmax_local_cpu_size: 4.0\nlocal_disk: file://$TICKET_INFERENCE_HOME/phase2/run-n_a9bj1o/kv-disk/\nmax_local_disk_size: 40.0\n",
+    "gpu_before_launch": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "6603",
+      "utilization.gpu": "1",
+      "temperature.gpu": "52.40"
+    },
+    "gpu_after_start": {
+      "name": "NVIDIA GeForce RTX 5090",
+      "driver_version": "621.01",
+      "memory.total": "32607",
+      "memory.used": "26659",
+      "utilization.gpu": "0",
+      "temperature.gpu": "43.00"
+    },
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "distro": "Ubuntu-26.04"
+  },
+  "disk_filesystem": "ext4",
+  "backend_startup_log": [
+    "\u001b[32;20m[2026-11-16 13:36:36,263] LMCache INFO:\u001b[0m Created backend: LocalCPUBackend (LocalCPUBackend) \u001b[3m(storage_manager.py:1300:lmcache.inprocess.v1.storage_backend.storage_manager)\u001b[0m",
+    "\u001b[32;20m[2026-11-16 13:36:36,263] LMCache INFO:\u001b[0m Created backend: LocalDiskBackend (LocalDiskBackend) \u001b[3m(storage_manager.py:1300:lmcache.inprocess.v1.storage_backend.storage_manager)\u001b[0m"
+  ]
+}
